@@ -1,0 +1,11 @@
+# .github/metadata.yaml
+description: "Integer-to-string radix formatter for Swift — spells any BinaryInteger in decimal, hexadecimal, octal, or binary, with optional base prefix, sign strategy, and left zero-padding, through one value.formatted(_:) entry point. Foundation-free."
+topics:
+  - primitives
+  - radix
+  - formatter
+  - integer
+  - base-n
+homepage: "https://swift-institute.org"
+readme:
+  family: E

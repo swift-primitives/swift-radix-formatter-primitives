@@ -13,12 +13,12 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Radix Format Primitives",
-            targets: ["Radix Format Primitives"]
+            name: "Radix Formatter Primitives",
+            targets: ["Radix Formatter Primitives"]
         ),
         .library(
-            name: "Radix Format Primitives Test Support",
-            targets: ["Radix Format Primitives Test Support"]
+            name: "Radix Formatter Primitives Test Support",
+            targets: ["Radix Formatter Primitives Test Support"]
         ),
     ],
     dependencies: [
@@ -27,25 +27,25 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Radix Format Primitives",
+            name: "Radix Formatter Primitives",
             dependencies: [
                 .product(name: "Radix Primitive", package: "swift-radix-primitives"),
                 .product(name: "Formatter Protocol", package: "swift-formatter-primitives"),
             ]
         ),
         .target(
-            name: "Radix Format Primitives Test Support",
+            name: "Radix Formatter Primitives Test Support",
             dependencies: [
-                "Radix Format Primitives",
+                "Radix Formatter Primitives",
                 .product(name: "Radix Primitives Test Support", package: "swift-radix-primitives"),
             ],
             path: "Tests/Support"
         ),
         .testTarget(
-            name: "Radix Format Primitives Tests",
+            name: "Radix Formatter Primitives Tests",
             dependencies: [
-                "Radix Format Primitives",
-                "Radix Format Primitives Test Support",
+                "Radix Formatter Primitives",
+                "Radix Formatter Primitives Test Support",
             ]
         ),
     ],
